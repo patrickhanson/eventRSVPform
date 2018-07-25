@@ -1,0 +1,11 @@
+doctype
+html
+    h1 Guest List
+        ul Attending
+            each val in userResponse
+                if val.attending === true
+                    li= val.name
+        ul Not Attending
+            each val in userResponse
+                unless val.attending === true
+                    li= val.name
