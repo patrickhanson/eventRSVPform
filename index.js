@@ -15,7 +15,7 @@ const Schema = mongoose.Schema
 const responseSchema = new Schema ({
     name: String,
     email: String,
-    attending: Boolean,
+    attending: String,
     guestnumber: Number
 })
 
